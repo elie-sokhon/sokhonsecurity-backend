@@ -1,0 +1,32 @@
+# === Python / Django ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.env
+.env.*
+.envrc
+db.sqlite3
+*.pot
+*.mo
+*.pid
+*.swp
+env/
+venv/
+local_settings.py
+
+# Ignore media (handled via S3 in production)
+media/
+product_images/
+product_pdfs/
+
+# Ignore collected static files (they will be regenerated)
+staticfiles/
+
+# === System Files ===
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.DS_Store
