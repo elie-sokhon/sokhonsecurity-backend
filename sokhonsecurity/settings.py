@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 
-
+CSRF_TRUSTED_ORIGINS = os.getenv("CSRF_TRUSTED_ORIGINS", "").split(",")
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 
