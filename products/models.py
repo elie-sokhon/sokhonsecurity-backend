@@ -6,7 +6,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='media/product_images/')
     pdf_file = models.FileField(upload_to='media/product_pdfs/')
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    hover_image = models.ImageField(upload_to='product_images/', blank=True, null=True)
+    hover_image = models.ImageField(upload_to='media/product_images/', blank=True, null=True)
     title = models.CharField(max_length=255, blank=True, null=True)
     feature1 = models.TextField(blank=True, null=True)
     feature2 = models.TextField(blank=True, null=True)
