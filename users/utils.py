@@ -16,7 +16,7 @@ def send_verification_email(request, user):
         domain = "127.0.0.1:8000"
     else:
         protocol = "https"  # Production uses HTTPS
-        domain = "www.sokhonsecurity.com"
+        domain = "sokhonsecurity-backend-production.up.railway.app"
 
     verification_link = f"{protocol}://{domain}/api/verify-email/{uid}/{token}/"
 
