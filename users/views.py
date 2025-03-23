@@ -48,9 +48,9 @@ class VerifyEmailView(generics.GenericAPIView):
                 user.save()
                 
                 if settings.DEBUG:
-                    return redirect("http://localhost:3000/email-verified")
+                    return redirect("http://localhost:3000/email_verified")
                 else:
-                    return redirect("https://www.sokhonsecurity.com/email-verified")
+                    return redirect("https://www.sokhonsecurity.com/email_verified")
             else:
                 if settings.DEBUG:
                     return redirect("http://localhost:3000/email_verification_failed")
